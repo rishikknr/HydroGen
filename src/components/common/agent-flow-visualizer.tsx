@@ -143,12 +143,6 @@ const AgentFlowVisualizer: React.FC<AgentFlowVisualizerProps> = ({ isAnalyzing }
             <FlowArrow direction="up" isAnimating={isAnalyzing} lengthClass="h-4 md:h-6" delay={`${0.5 + index * 0.1}s`} flowDuration="0.8s" />
           </div>
         ))}
-         {/* Central "Cerebrum Logic" node - conceptual */}
-         <div className="flex flex-col items-center space-y-1 md:space-y-2 col-start-auto">
-            <FlowArrow direction="down" isAnimating={isAnalyzing} lengthClass="h-4 md:h-6" delay={`0s`} flowDuration="0.8s" />
-            <AgentNode name="Cerebrum Logic" icon={Workflow} isAnimating={isAnalyzing} />
-            <FlowArrow direction="up" isAnimating={isAnalyzing} lengthClass="h-4 md:h-6" delay={`0.5s`} flowDuration="0.8s" />
-        </div>
       </div>
 
       <FlowArrow direction="up" isAnimating={isAnalyzing} lengthClass="h-4 md:h-6" />
@@ -172,4 +166,3 @@ const AgentFlowVisualizer: React.FC<AgentFlowVisualizerProps> = ({ isAnalyzing }
 };
 
 export default AgentFlowVisualizer;
-
