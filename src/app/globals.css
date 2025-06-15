@@ -129,10 +129,10 @@ body {
 }
 
 @keyframes flowRightSM {
-  0% { transform: translateX(-100%) translateY(-50%); opacity: 0; }
+  0% { transform: translateX(0) translateY(-50%); opacity: 0; } /* Start at left edge of line */
   10% { opacity: 1; }
   90% { opacity: 1; }
-  100% { transform: translateX(calc(var(--flow-distance, 100px) - 100%)) translateY(-50%); opacity: 0; }
+  100% { transform: translateX(calc(var(--flow-distance) - 100%)) translateY(-50%); opacity: 0; } /* End at right edge of line */
 }
 .animate-flow-right-sm {
   animation: flowRightSM var(--flow-duration, 2s) linear infinite;
@@ -141,10 +141,10 @@ body {
 }
 
 @keyframes flowLeftSM {
-  0% { transform: translateX(0) translateY(-50%); opacity: 0; }
+  0% { transform: translateX(0) translateY(-50%); opacity: 0; } /* Start at right edge of line */
   10% { opacity: 1; }
   90% { opacity: 1; }
-  100% { transform: translateX(calc(var(--flow-distance, -100px) + 0%)) translateY(-50%); opacity: 0; }
+  100% { transform: translateX(calc(var(--flow-distance) + 100%)) translateY(-50%); opacity: 0; } /* End at left edge of line, --flow-distance is negative */
 }
 .animate-flow-left-sm {
   animation: flowLeftSM var(--flow-duration, 2s) linear infinite;
@@ -154,10 +154,10 @@ body {
 
 
 @keyframes flowDownSM {
-  0% { transform: translateY(-100%) translateX(-50%); opacity: 0; }
+  0% { transform: translateY(0) translateX(-50%); opacity: 0; } /* Start at top edge of line */
   10% { opacity: 1; }
   90% { opacity: 1; }
-  100% { transform: translateY(calc(var(--flow-distance, 100px) - 100%)) translateX(-50%); opacity: 0; }
+  100% { transform: translateY(calc(var(--flow-distance) - 100%)) translateX(-50%); opacity: 0; } /* End at bottom edge of line */
 }
 .animate-flow-down-sm {
   animation: flowDownSM var(--flow-duration, 1.5s) linear infinite;
@@ -166,10 +166,10 @@ body {
 }
 
 @keyframes flowUpSM {
-  0% { transform: translateY(0) translateX(-50%); opacity: 0; }
+  0% { transform: translateY(0) translateX(-50%); opacity: 0; } /* Start at bottom edge of line */
   10% { opacity: 1; }
   90% { opacity: 1; }
-  100% { transform: translateY(calc(var(--flow-distance, -100px) + 0%)) translateX(-50%); opacity: 0; }
+  100% { transform: translateY(calc(var(--flow-distance) + 100%)) translateX(-50%); opacity: 0; } /* End at top edge of line, --flow-distance is negative */
 }
 .animate-flow-up-sm {
   animation: flowUpSM var(--flow-duration, 1.5s) linear infinite;
