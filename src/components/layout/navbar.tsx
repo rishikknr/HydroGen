@@ -47,7 +47,7 @@ export default function Navbar() {
 
         <div className="flex items-center gap-3">
           <Button variant="outline" className="hidden md:inline-flex border-primary/50 text-primary hover:bg-primary/10 hover:text-primary hover:border-primary" asChild>
-            <Link href="/#contact"><span>Contact Us</span></Link> {/* Reverted href */}
+            <Link href="/#contact"><span>Contact Us</span></Link>
           </Button>
           <Sheet>
             <SheetTrigger asChild>
@@ -70,7 +70,6 @@ export default function Navbar() {
                     {link.label}
                   </Link>
                 ))}
-                {/* Re-add specific Contact Us button for mobile if it was there before Contact was a primary nav link */}
                  <Button variant="outline" className="w-full text-lg" asChild>
                     <Link href="/#contact"><span>Contact Us</span></Link>
                   </Button>

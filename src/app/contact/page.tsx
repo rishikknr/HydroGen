@@ -1,3 +1,4 @@
+
 // This page content has been reverted.
 // "use client";
 
@@ -17,7 +18,7 @@
 //   BreadcrumbSeparator,
 // } from "@/components/ui/breadcrumb";
 // import Link from "next/link";
-// import { Mail, Phone, MapPin, Send, MessageSquare } from "lucide-react"; // Added MessageSquare
+// import { Mail, Phone, MapPin, Send, MessageSquare } from "lucide-react"; 
 
 export default function ContactPage() {
   return null;
@@ -30,7 +31,7 @@ export default function ContactPage() {
   //           <BreadcrumbList>
   //             <BreadcrumbItem>
   //               <BreadcrumbLink asChild>
-  //                 <Link href="/">Home</Link>
+  //                 <Link href="/"><span>Home</span></Link> 
   //               </BreadcrumbLink>
   //             </BreadcrumbItem>
   //             <BreadcrumbSeparator />
