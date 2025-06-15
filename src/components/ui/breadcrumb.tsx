@@ -47,22 +47,15 @@ const BreadcrumbLink = React.forwardRef<
   React.ComponentPropsWithoutRef<"a"> & {
     asChild?: boolean
   }
->(({ asChild, className, children, ...props }, ref) => {
+>(({ asChild, className, ...props }, ref) => { // children are now part of ...props
   const Comp = asChild ? Slot : "a"
 
-  // Ensure children are wrapped if 'asChild' is true and children are multiple,
-  // though typically for BreadcrumbLink, children will be simple text or a single Link component.
-  // If a Link component is passed as a child to BreadcrumbLink, and that Link has multiple children,
-  // the Link component itself must handle wrapping its own children.
-  // This component primarily ensures that if Comp is Slot, it correctly passes down props.
   return (
     <Comp
       ref={ref}
       className={cn("transition-colors hover:text-foreground", className)}
-      {...props}
-    >
-      {children}
-    </Comp>
+      {...props} // Slot will receive its children from props.children
+    />
   )
 })
 BreadcrumbLink.displayName = "BreadcrumbLink"

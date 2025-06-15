@@ -50,13 +50,13 @@ export default function AgentDetailPage() {
               <BreadcrumbList>
                 <BreadcrumbItem>
                   <BreadcrumbLink asChild>
-                    <Link href="/">Home</Link>
+                    <Link href="/"><span>Home</span></Link>
                   </BreadcrumbLink>
                 </BreadcrumbItem>
                 <BreadcrumbSeparator />
                 <BreadcrumbItem>
                   <BreadcrumbLink asChild>
-                    <Link href="/agents">Agents</Link>
+                    <Link href="/agents"><span>Agents</span></Link>
                   </BreadcrumbLink>
                 </BreadcrumbItem>
                 <BreadcrumbSeparator />

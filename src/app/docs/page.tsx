@@ -73,7 +73,7 @@ export default function DocsPage() {
             <BreadcrumbList>
               <BreadcrumbItem>
                 <BreadcrumbLink asChild>
-                  <Link href="/">Home</Link>
+                  <Link href="/"><span>Home</span></Link>
                 </BreadcrumbLink>
               </BreadcrumbItem>
               <BreadcrumbSeparator />
@@ -217,7 +217,7 @@ export default function DocsPage() {
                     Our team is here to help you get the most out of HydroGen. Don't hesitate to reach out.
                 </p>
                 <Button size="lg" className="group bg-primary hover:bg-primary/90 text-primary-foreground box-shadow-glow-primary" asChild>
-                    <Link href="/#contact"> {/* Reverted href */}
+                    <Link href="/#contact">
                       <span className="flex items-center">
                         Contact Support
                         <ChevronRight size={20} className="ml-2 group-hover:translate-x-1 transition-transform" />

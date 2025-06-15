@@ -22,7 +22,7 @@ export default function AgentsPage() {
               <BreadcrumbList>
                 <BreadcrumbItem>
                   <BreadcrumbLink asChild>
-                    <Link href="/">Home</Link>
+                    <Link href="/"><span>Home</span></Link>
                   </BreadcrumbLink>
                 </BreadcrumbItem>
                 <BreadcrumbSeparator />

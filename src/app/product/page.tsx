@@ -108,7 +108,7 @@ export default function ProductPage() {
             <BreadcrumbList>
               <BreadcrumbItem>
                 <BreadcrumbLink asChild>
-                  <Link href="/">Home</Link>
+                  <Link href="/"><span>Home</span></Link>
                 </BreadcrumbLink>
               </BreadcrumbItem>
               <BreadcrumbSeparator />
@@ -140,7 +140,7 @@ export default function ProductPage() {
                 </Link>
                 </Button>
                 <Button variant="outline" size="lg" className="border-accent text-accent hover:bg-accent/10 hover:border-accent hover:text-accent group" asChild>
-                <Link href="/#contact"> {/* Reverted href */}
+                <Link href="/#contact">
                     <span>Contact Sales</span>
                 </Link>
                 </Button>
@@ -240,7 +240,7 @@ export default function ProductPage() {
                 </Link>
                 </Button>
                 <Button variant="outline" size="lg" className="border-primary text-primary hover:bg-primary/10 hover:border-primary hover:text-primary group" asChild>
-                <Link href="/#contact"> {/* Reverted href */}
+                <Link href="/#contact">
                   <span className="flex items-center">
                     Speak to an Expert
                   </span>
