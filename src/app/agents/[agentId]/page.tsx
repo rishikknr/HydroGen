@@ -9,7 +9,6 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import Link from 'next/link';
 import { ArrowLeft, CheckCircle } from 'lucide-react';
-import Image from 'next/image';
 import { Badge } from '@/components/ui/badge';
 import { Separator } from '@/components/ui/separator';
 import {
@@ -36,10 +35,10 @@ export default function AgentDetailPage() {
   const iconColorClass = 
     color === 'primary' ? 'text-primary' :
     color === 'accent' ? 'text-accent' :
-    color === 'emerald' ? 'text-emerald-500' : // Direct Tailwind class for specific colors
+    color === 'emerald' ? 'text-emerald-500' :
     color === 'yellow' ? 'text-yellow-400' :
     color === 'orange' ? 'text-orange-500' :
-    'text-foreground'; // Fallback
+    'text-foreground'; 
 
   return (
     <div className="flex flex-col min-h-screen bg-background text-foreground">
@@ -127,11 +126,6 @@ export default function AgentDetailPage() {
             )}
           </div>
           
-          <div className="my-12 p-6 border border-dashed border-border/50 rounded-lg text-center bg-card/50 glassmorphism">
-            <Image src="https://placehold.co/600x300.png" alt={`${name} process diagram placeholder`} width={600} height={300} className="mx-auto rounded-md" data-ai-hint="abstract diagram" />
-            <p className="text-muted-foreground mt-4 text-sm">Conceptual diagram illustrating {name}'s role in the HydroGen ecosystem (placeholder).</p>
-          </div>
-
           <Separator className="my-12" />
 
           <div className="text-center">
