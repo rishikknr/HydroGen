@@ -138,7 +138,7 @@ export default function ProductPage() {
                 </Link>
                 </Button>
                 <Button variant="outline" size="lg" className="border-accent text-accent hover:bg-accent/10 hover:border-accent hover:text-accent group" asChild>
-                <Link href="/#contact">
+                <Link href="/contact">
                     Contact Sales
                 </Link>
                 </Button>
@@ -236,7 +236,7 @@ export default function ProductPage() {
                 </Link>
                 </Button>
                 <Button variant="outline" size="lg" className="border-primary text-primary hover:bg-primary/10 hover:border-primary hover:text-primary group" asChild>
-                <Link href="/#contact">
+                <Link href="/contact">
                     Speak to an Expert
                 </Link>
                 </Button>
@@ -248,5 +248,3 @@ export default function ProductPage() {
     </div>
   );
 }
-
-    

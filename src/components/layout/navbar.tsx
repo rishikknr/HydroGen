@@ -1,3 +1,4 @@
+
 "use client";
 
 import Link from "next/link";
@@ -13,6 +14,7 @@ const navLinks = [
   { href: "/agents", label: "Agents" },
   { href: "/demo", label: "Demo" },
   { href: "/docs", label: "Docs" },
+  { href: "/contact", label: "Contact" },
 ];
 
 export default function Navbar() {
@@ -45,7 +47,7 @@ export default function Navbar() {
 
         <div className="flex items-center gap-3">
           <Button variant="outline" className="hidden md:inline-flex border-primary/50 text-primary hover:bg-primary/10 hover:text-primary hover:border-primary" asChild>
-            <Link href="/#contact">Contact Us</Link>
+            <Link href="/contact">Contact Us</Link>
           </Button>
           <Sheet>
             <SheetTrigger asChild>
@@ -68,9 +70,7 @@ export default function Navbar() {
                     {link.label}
                   </Link>
                 ))}
-                <Button variant="default" className="bg-primary hover:bg-primary/90 text-primary-foreground w-full" asChild>
-                  <Link href="/#contact">Contact Us</Link>
-                </Button>
+                {/* The "Contact Us" button in the sheet was removed as "Contact" is now a primary nav link */}
               </nav>
             </SheetContent>
           </Sheet>

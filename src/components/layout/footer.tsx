@@ -1,3 +1,4 @@
+
 import Link from "next/link";
 import { Zap, Linkedin, FileText, Lock } from "lucide-react";
 
@@ -6,7 +7,7 @@ const footerNavs = [
   { href: "/agents", label: "Agents" },
   { href: "/demo", label: "Request Demo" },
   { href: "/docs", label: "Docs" },
-  { href: "/#contact", label: "Contact" },
+  { href: "/contact", label: "Contact" },
 ];
 
 const legalNavs = [
