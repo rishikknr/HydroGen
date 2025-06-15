@@ -50,8 +50,10 @@ const DocsSectionCard = ({
         <div className="mt-4">
           <Button variant="outline" asChild className="border-primary text-primary hover:bg-primary/10 hover:text-primary group">
             <Link href={link}>
-              {linkLabel}
-              <ChevronRight size={18} className="ml-2 group-hover:translate-x-1 transition-transform" />
+              <span className="flex items-center">
+                {linkLabel}
+                <ChevronRight size={18} className="ml-2 group-hover:translate-x-1 transition-transform" />
+              </span>
             </Link>
           </Button>
         </div>
@@ -215,9 +217,11 @@ export default function DocsPage() {
                     Our team is here to help you get the most out of HydroGen. Don't hesitate to reach out.
                 </p>
                 <Button size="lg" className="group bg-primary hover:bg-primary/90 text-primary-foreground box-shadow-glow-primary" asChild>
-                    <Link href="/contact">
+                    <Link href="/#contact"> {/* Reverted href */}
+                      <span className="flex items-center">
                         Contact Support
                         <ChevronRight size={20} className="ml-2 group-hover:translate-x-1 transition-transform" />
+                      </span>
                     </Link>
                 </Button>
             </div>

@@ -1,3 +1,4 @@
+
 "use client";
 
 import Link from "next/link";
@@ -136,7 +137,9 @@ export default function AgentGallerySection() {
         <div className="text-center mt-12">
           <Button size="lg" variant="outline" className="border-primary text-primary hover:bg-primary/10 hover:text-primary hover:border-primary group" asChild>
             <Link href="/agents">
-              Explore All Agents <ArrowRight size={20} className="ml-2 group-hover:translate-x-1 transition-transform" />
+              <span className="flex items-center">
+                Explore All Agents <ArrowRight size={20} className="ml-2 group-hover:translate-x-1 transition-transform inline-block" />
+              </span>
             </Link>
           </Button>
         </div>

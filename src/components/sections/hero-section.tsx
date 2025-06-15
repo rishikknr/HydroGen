@@ -1,3 +1,4 @@
+
 "use client";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Zap } from "lucide-react";
@@ -28,14 +29,16 @@ export default function HeroSection() {
               className="group bg-primary hover:bg-primary/90 text-primary-foreground transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-primary/40 focus-visible:ring-primary"
               asChild
             >
-              <Link href="/#demo">
-                See HydroGen in Action
-                <ArrowRight size={20} className="ml-2 group-hover:translate-x-1 transition-transform" />
+              <Link href="/demo">
+                <span className="flex items-center">
+                  See HydroGen in Action
+                  <ArrowRight size={20} className="ml-2 group-hover:translate-x-1 transition-transform inline-block" />
+                </span>
               </Link>
             </Button>
             <Button variant="outline" size="lg" className="group border-border hover:bg-accent/10 hover:border-accent hover:text-accent transition-all duration-300 transform hover:scale-105 focus-visible:ring-accent" asChild>
               <Link href="/docs">
-                Read Documentation
+                <span>Read Documentation</span>
               </Link>
             </Button>
           </div>

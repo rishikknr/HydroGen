@@ -7,7 +7,7 @@ const footerNavs = [
   { href: "/agents", label: "Agents" },
   { href: "/demo", label: "Request Demo" },
   { href: "/docs", label: "Docs" },
-  { href: "/contact", label: "Contact" },
+  { href: "/#contact", label: "Contact" }, // Reverted href
 ];
 
 const legalNavs = [

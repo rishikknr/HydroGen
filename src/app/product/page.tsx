@@ -133,13 +133,15 @@ export default function ProductPage() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button size="lg" className="group bg-primary hover:bg-primary/90 text-primary-foreground box-shadow-glow-primary" asChild>
                 <Link href="/demo">
+                  <span className="flex items-center">
                     Request a Demo
                     <ArrowRight size={20} className="ml-2 group-hover:translate-x-1 transition-transform" />
+                  </span>
                 </Link>
                 </Button>
                 <Button variant="outline" size="lg" className="border-accent text-accent hover:bg-accent/10 hover:border-accent hover:text-accent group" asChild>
-                <Link href="/contact">
-                    Contact Sales
+                <Link href="/#contact"> {/* Reverted href */}
+                    <span>Contact Sales</span>
                 </Link>
                 </Button>
             </div>
@@ -231,13 +233,17 @@ export default function ProductPage() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
                <Button size="lg" className="group bg-accent hover:bg-accent/90 text-accent-foreground box-shadow-glow-accent" asChild>
                 <Link href="/demo">
+                  <span className="flex items-center">
                     Experience the Demo
                     <ArrowRight size={20} className="ml-2 group-hover:translate-x-1 transition-transform" />
+                  </span>
                 </Link>
                 </Button>
                 <Button variant="outline" size="lg" className="border-primary text-primary hover:bg-primary/10 hover:border-primary hover:text-primary group" asChild>
-                <Link href="/contact">
+                <Link href="/#contact"> {/* Reverted href */}
+                  <span className="flex items-center">
                     Speak to an Expert
+                  </span>
                 </Link>
                 </Button>
             </div>
