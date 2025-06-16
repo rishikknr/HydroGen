@@ -1,0 +1,16 @@
+{
+  "node": {
+    "407bbd81072e808d05353bc1fcab33a655a3bf667b": {
+      "workers": {
+        "app/demo/page": {
+          "moduleId": "[project]/.next-internal/server/app/demo/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/ai/flows/simulate-hydrogen-analysis.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false
+        }
+      },
+      "layer": {
+        "app/demo/page": "action-browser"
+      }
+    }
+  },
+  "edge": {}
+}
