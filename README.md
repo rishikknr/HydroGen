@@ -5,6 +5,9 @@
 ![License](https://img.shields.io/badge/license-Proprietary-red)
 ![Version](https://img.shields.io/badge/version-1.0.0-blue)
 
+## Explore HydroGen in action — AI-powered reliability for next-gen payment infrastructure.
+🔗 Live Demo: https://hydro-gen.vercel.app
+
 ## A Paradigm Shift in Global Payments
 
 Welcome to the definitive blueprint for the **Sentient Payment Orchestration Engine**. This project represents a fundamental rethinking of global payment infrastructure. We are moving beyond the traditional, reactive model of payment processing—a model that treats payments as a defensive cost center—and into a new era. Our vision is to create a proactive, intelligent, and self-optimizing ecosystem that functions as a strategic asset, actively driving revenue, enhancing customer satisfaction, and increasing profitability.
